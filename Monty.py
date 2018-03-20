@@ -11,7 +11,7 @@ import psutil
 
 filedir=os.path.dirname(os.path.abspath(__file__))
 database=[]
-with open(filedir+'/quotes_all.csv') as csvfile:
+with open(filedir+'/quoteslib.csv') as csvfile:
           quotesdat=csv.reader(csvfile,delimiter=';')
           for row in quotesdat:
               database.append(row[0])
